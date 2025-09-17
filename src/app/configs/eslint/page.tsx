@@ -1,18 +1,19 @@
 import { CodePreview } from "@/components/global/code-preview";
 import { PageHeader } from "@/components/global/page-header";
-import { ReactIcon } from "@/components/icons/react-icon";
-import { hooksData } from "@/data/hooks.data";
+import { eslintData } from "@/data/eslint.data";
+import { EslintIcon } from "@/components/icons/eslint-icon";
 
-export default function ReactHooksPage() {
+
+export default function EslintPage() {
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-8">
       <PageHeader
-      icon={ReactIcon}
-      title="React Hooks"
-      description="Uma coleção de Hooks customizados e úteis para agilizar o desenvolvimento de componentes em React."
+      icon={EslintIcon}
+      title="Eslint Config"
+      description="Configurações padronizadas para Eslint, prontas para serem usadas em qualquer aplicação web."
       />
       <div className="flex flex-col gap-1">
-        {hooksData.map((snippet) => (
+        {eslintData.map((snippet) => (
           <CodePreview key={snippet.id} {...snippet} />
         ))}
       </div>

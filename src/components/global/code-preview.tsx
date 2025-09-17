@@ -19,7 +19,7 @@ export function CodePreview({ title, description, language, code, defaultOpen = 
   };
 
   return (
-    <div className="mb-2 rounded-lg border bg-card text-card-foreground shadow-sm">
+    <div className="mb-2 rounded-lg border bg-card text-card-foreground shadow-sm max-w-6xl">
       {/* Cabeçalho com Título e Descrição */}
         <header
         className="flex cursor-pointer select-none items-center justify-between p-4"
